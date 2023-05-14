@@ -8,3 +8,8 @@ do
 	touch "psalms/$filename"
 done
 
+for ((i=20; i<=150; i++))
+do
+	filename="$(printf "%03d" $i).yaml"
+	rm "psalms/$filename"
+done
