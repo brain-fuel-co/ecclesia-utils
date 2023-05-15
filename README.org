@@ -53,7 +53,6 @@ Notices:
 *** Make program ouput GPL notice at startup in interactive mode.
 *** Make program implement `show w` and `show c` for GPL
 *** Psalms
-4
 5
 6
 8
