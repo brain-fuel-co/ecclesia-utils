@@ -1,10 +1,10 @@
-- verse: 0
-  text: |
-    "To the chief Musician upon Muthlabben, A Psalm of David."
 - verse: 1
   text: |
-    "I will praise thee, O LORD, with my | whole heart;*
+    "(To the chief Musician upon Muthlabben, A Psalm of David. I will praise thee, O LORD, with my | whole heart;*
       I will shew forth all thy mar- | vellous works."
+  notes:
+    - "chief...: or, overseer"
+    - "have...: or, be gracious unto me"
 - verse: 2
   text: |
     "I will be glad and re- | joice in thee:*
