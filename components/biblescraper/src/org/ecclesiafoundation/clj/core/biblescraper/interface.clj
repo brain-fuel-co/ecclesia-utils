@@ -6,7 +6,7 @@
 ;;scratch pad
 (require '[clj-http.client :as client]
          '[net.cgrand.enlive-html :as enlive]
-         '[clojure.core.match :refer [match]])
+         '[clojure.pprint :as pprint])
 
 (def url "https://ebible.org/kjv/PSA001.htm")
 
@@ -17,28 +17,19 @@
     (catch Exception e
       (println "An error occurred:" (.getMessage e)))))
 
-(defn html->parsed-html [html-string]
+(defn html->nodes [html-string]
   (enlive/html-resource (java.io.StringReader. html-string)))
 
-(defn parsed-html->elements-with-class
-  [parsed-html class-name & class-names]
-  (let [keywords (vector (map #(keyword (str "." %)) class-name & class-names))]
-    (enlive/select parsed-html keywords)))
+(defn nodes->nodes-with-class
+  [nodes class-name]
+  (let [selector (keyword (str "." class-name))]
+    (enlive/select nodes [selector])))
 
-(defn html->elements-with-class
-  [html class-name & class-names]
-  (let [parsed-html (html->parsed-html html)]
-    (parsed-html->elements-with-class parsed-html class-name class-names)))
+(defn html->nodes-with-class
+  [html class-name]
+  (let [nodes (html->nodes html)]
+    (nodes->nodes-with-class nodes class-name)))
 
-(defn extract-string [element]
-  (match (type element)
-         String element
-         Map (extract-string (html->elements-with-class element "add" "nd"))
-         Vector (map extract-string element)
-         List (map extract-string element)
-         _ nil))
-
-  (let [html (get-html-from-url url)
-        elements (html->elements-with-class html "q")]
-    (->> elements
-         clojure.pprint/pprint))
+(let [html (get-html-from-url url)
+      nodes (html->nodes-with-class html "q")]
+  (pprint/pprint nodes))
