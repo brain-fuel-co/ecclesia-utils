@@ -1,0 +1,50 @@
+- verse: 1
+  text: |
+    "By the rivers of Babylon, there | we sat down,*
+      yea, we wept, when we remem- | bered Zion."
+- verse: 2
+  text: |
+    "We hanged our harps upon | the willows*
+      in the | midst thereof."
+- verse: 3
+  text: |
+    "For there they that carried us away captive required of | us a song;*
+      and they that wasted us required of us mirth saying, Sing us one of the songs | of Zion."
+  notes:
+    - "a song: Heb. the words of a song"
+    - "wasted...: Heb. laid us on heaps"
+- verse: 4
+  text: |
+    "How shall we sing | the LORD's song*
+      in | a strange land?"
+  notes:
+    - "strange...: Heb. land of a stranger?"
+- verse: 5
+  text: |
+    "If I forget thee, O Je- | rusalem,*
+      let my right hand forget | her cunning."
+- verse: 6
+  text: |
+    "If I do not remember thee, let my tong cleave to the roof | of my mouth;*
+      if I prefer not Jerusalem above | my chief joy."
+  notes:
+    - "my chief...: Heb. the head of my joy"
+- verse: 7
+  text: |
+    "Remember, O LORD, the children of Edom in the day of Je- | rusalem;*
+      who said, Rase it, rase it, even to the founda- | tion thereof."
+  notes:
+    - "Rase it: Heb. Make bare"
+- verse: 8
+  text: |
+    "O daughter of Babylon, who art to | be destroyed;*
+      happy shall he be, that rewardeth thee as thou | hast served us."
+  notes:
+    - "destroyed: Heb. wasted"
+    - "rewardeth...: Heb. recompenseth unto thee thy deed which thou didst to us"
+- verse: 9
+  text: |
+    "Happy | shall he be,*
+      that taketh and dasheth thy little ones a- | gainst the stones."
+  notes:
+    - "the stones: Heb. the rock"
